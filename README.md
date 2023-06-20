@@ -1,5 +1,5 @@
-Usage: run "python 2bit.py" in terminal
+Usage: run "python 2bit.py" in terminal on mac/linux or run file with python on windows.
 
-enter text to split with Cheer2's
+enter text to split
 
-Change number 2 in line "result = split_and_join(line, 2)" to change bit amount
+enter bit amout to place between characters (enter 0 for no cheer)

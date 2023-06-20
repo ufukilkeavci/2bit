@@ -7,11 +7,20 @@ def split_and_join(line, bits):
 
     for i in range(0, len(line)):
         result += line[i]
-        result += f" Cheer{bits} "
+        if bits != 0 and i != len(line) - 1:
+            result += f" Cheer{bits} "
+        else:
+            result += " "
 
     return result
 
 if __name__ == '__main__':
     line = input()
-    result = split_and_join(line, 2)
+    bit_amount = None
+    while bit_amount is None:
+        try:
+            bit_amount = int(input("Enter bit amount: "))
+        except ValueError:
+            bit_amount = None
+    result = split_and_join(line, bit_amount)
     print(result)
